@@ -1,0 +1,78 @@
+body {
+	background-color: #F4F5F6;
+}
+
+.row {
+	text-align: center;
+}
+
+.breather img {
+	width: 10%;
+}
+
+.logo img {
+	width: 45%;
+}
+
+.instructions {
+	width: 40%;
+	margin: 0 auto;
+	min-width: 300px;
+}
+.directions {
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+}
+
+.directions p {
+	display: inline-block;
+	/*width: 75%;*/
+	margin: 0 auto;
+	text-align: right;
+}
+
+.directions img {
+	display: inline-block;
+	width: 40%;
+	margin: 0 auto;
+}
+
+.middle {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+
+}
+
+.demo img {
+	width: 85%;
+}
+
+.evolve img {
+	width: 60%;
+	margin-top: 40%;
+}
+
+.faq img {
+	width: 30%;
+	margin-top: 40%;
+}
+
+.download img {
+	max-width: 200px;
+}
+
+.footer {
+	text-align: center;
+}
+.footer p {
+	width: 35%;
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer img {
+	width: 150px;
+}
