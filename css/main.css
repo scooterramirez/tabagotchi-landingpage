@@ -1,3 +1,20 @@
+
+
+@font-face {
+  font-family: 'vcr osd mono';
+  src: url('../fonts/VCR_OSD_MONO.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('../fonts/Gotham-Book.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'joystix';
+  src: url('../fonts/joystix.ttf') format("truetype");
+}
+
 body {
 	background-color: #F4F5F6;
 }
@@ -6,8 +23,29 @@ body {
 	text-align: center;
 }
 
+.upper {
+	padding: 1em 0em;
+	/*border: solid orange 1px;*/
+}
+
+.breather {
+	/*border: solid red 1px;*/
+	padding: 1em 0em;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
 .breather img {
 	width: 10%;
+}
+
+.logo {
+	/*border: solid blue 1px;*/
+	padding: 1em 0em;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 .logo img {
@@ -27,9 +65,11 @@ body {
 
 .directions p {
 	display: inline-block;
+	font-family: 'vcr osd mono';
 	/*width: 75%;*/
 	margin: 0 auto;
 	text-align: right;
+	color: #545454;
 }
 
 .directions img {
@@ -37,16 +77,18 @@ body {
 	width: 40%;
 	margin: 0 auto;
 }
-
+                
 .middle {
 	margin: 0 auto;
 	display: block;
 	text-align: center;
-
+	padding: 2em 0em;
 }
 
 .demo img {
-	width: 85%;
+	width: 75%;
+	max-width: 500px;
+
 }
 
 .evolve img {
@@ -59,20 +101,250 @@ body {
 	margin-top: 40%;
 }
 
+.faq img:hover {
+	opacity: .8;
+}
+
 .download img {
 	max-width: 200px;
 }
 
+.download img:hover {
+	opacity: .8;
+}
+
 .footer {
 	text-align: center;
+	padding: 2em 0em;
 }
 .footer p {
 	width: 35%;
 	max-width: 400px;
 	margin: 0 auto;
 	text-align: center;
+	color: #545454;
+	font-family: 'Gotham Book';
+	font-size: 12px;
+	opacity: .75;
 }
 
 .footer img {
-	width: 150px;
+	width: 120px;
+	margin-top: 10px;
+}
+
+
+/*faq styling*/
+.overlayyy {
+}
+
+
+.wrappmobile {
+    display: none;
+}
+.buttonn {
+}
+.buttonn a {
+    text-decoration:none;
+    border: none;
+}
+/*.btn-open:after {
+    color: #454B53;
+    content:"\f128";
+    font-family:"FontAwesome";
+    transition-property:all .2s linear 0s;
+    -moz-transition:all .2s linear 0s;
+    -webkit-transition:all .2s linear 0s;
+    -o-transition:all .2s linear 0s;
+}*/
+/*.btn-open:hover:after {
+}*/
+/*.btn-close:after {
+    color: #454B53;
+    content:"\f00d";
+    font-family:"FontAwesome";
+    transition-property:all .2s linear 0s;
+    -moz-transition:all .2s linear 0s;
+    -webkit-transition:all .2s linear 0s;
+    -o-transition:all .2s linear 0s;
+}*/
+/*.btn-close:hover:after {
+    color: #454B53;
+}*/
+/*overlay*/
+.overlay {
+    display: none;
+    position:fixed;
+    top:0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background-color: rgba(244, 245, 246, 0.95);
+    overflow: auto;
+    z-index:99;
+}
+
+.wrapp {
+    color:white;
+    text-align:left;
+    /*max-width:100%;*/
+    width: 100%;
+    float: center;
+    display: block;
+    margin:0 auto;
+    padding-top: 4em;
+    /*background-color: rgba(255, 255, 255, 0.90);*/
+    overflow: auto;
+
+}
+
+
+.quest {
+    padding: 1em 0em;
+    /*border: solid red 1px;*/
+    width: 800px;
+    margin: 0 auto;
+    float: center;
+}
+
+.quest a {
+	text-decoration: underline;
+	color: #454b53;
+	font-family: Avenir-Black;
+}
+
+.quest a:hover {
+	text-decoration: none;
+	opacity: .8;
+}
+
+.question {
+	font-size: 25px;
+	font-family: 'VCR OSD MONO';
+	color: #454B53;
+	text-shadow: 1px 1px 0px green;
+}
+.answer {
+	font-family: 'Gotham Book';
+	color: #000;
+}
+
+
+
+/* overlay */
+
+/*end faq*/
+
+
+
+
+
+/*mobile styling*/
+@media screen and (max-width: 991px) {	
+	.upper {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.breather {
+	}
+
+	.breather img {
+		width: 20%;
+	}
+
+	.logo {
+	}
+
+	.logo img {
+		width: 70%;
+	}
+
+	.instructions {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.directions {
+		width: 45%;
+		margin: 0 auto;
+	}
+
+	.directions img {
+		width: 20%;
+		min-width: 30px;
+	}
+
+	.middle {
+	}
+
+	.demo img {
+		width: 90% !important;
+	}
+
+	.evolve {
+		position: absolute; 
+		top: 10px;
+		left: 20px;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.evolve img {
+		width: 75px;
+		margin: 0 auto;
+	}
+
+	.faq {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.faq img {
+		width: 50px;
+		margin: 0 auto;
+	}
+
+	.download {
+	}
+
+	.download img {
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	.footer {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.footer p {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.overlay {
+		/*padding: 0em 1em;*/
+	}
+
+	.quest {
+		width: 90%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.question {
+		font-size: 20px;
+	}
+
+	.answer {
+		font-size: 12px;
+	}
+
 }

@@ -11,22 +11,17 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
     <div class="container">
+      <div class="row upper">
+          <div class="breather" >
+            <a href="http://breather.com"><img src="img/breather.png"></a>
+          </div>
 
-      <div class="row breather" >
-        <img src="img/breather.png">
-      </div>
-
-      <div class="row logo">
-        <img src="img/logo.png">
+          <div class="logo">
+            <img src="img/logo.png">
+          </div>
       </div>
 
       <div class="row instructions">
@@ -48,21 +43,63 @@
           <img src="img/demo.png">
         </div>
         <div class="col-md-3 faq">
-          <img src="img/question.png">
+          <a class="btn-open"><img src="img/question.png"></a>
         </div>
       </div>
 
       <div class="row download">
-        <img src="img/button.png">
+        <a href=""><img src="img/button.png"> </a>
       </div>
 
       <div class="row footer">
-        <p>Find your focus with fewer distractions. Try Breather.</p>
-        <img src="img/breatherlogo.png">
+        <p>Find your focus with fewer <br>distractions. Try Breather.</p>
+        <a href="http://breather.com" target="_blank"><img src="img/breatherlogo.png"></a>
       </div>
 
+<!-- FAQ -->
+ <!--    <div class = "overlayyy">
+      <div class="buttonn">
+          <a class="btn-open" href="#"></a>
+        </div>
+    </div> -->
+  
+      <div class="overlay">
+        <div class="wrapp">
+
+            <div class="quest">
+              <p class="question">What is this?</p>
+              <p class="answer">It’s a chrome extension that helps you escape distracting co-workers in the office.
+
+              Just press the button in your browser and it’ll immediately send a call to your phone, which you can use to excuse yourself from those pesky colleagues.
+              </p>
+            </div>
+        
+            <div class="quest">
+              <p class="question">Why did you do this?</p>
+              <p class="answer">Everyone knows what it’s like to be working on something really important, only to be distracted by that one co-worker who is always asking “Hey, can I have a minute?” 
+
+              So we made something to fix that problem.
+              </p>
+            </div>
+
+            <div class="quest">
+              <p class="question">What happens if I answer the call??</p>
+              <p class="answer">You’ll just have to find out for yourself!</p>
+            </div>
+
+            <div class="quest">
+              <p class="question">Will it work on office phones with extensions?</p>
+              <p class="answer">Unfortunately, not at this time. We opted to stick to 10 digit phone numbers for now.</p>
+            </div>
 
 
+            <div class="quest">
+              <p class="question">Who’s behind this?</p>
+              <p class="answer">We’re <a href="http://breather.com" target="_blank">Breather</a>, a network of beautiful, inspiring workspaces located in cities throughout the US and around the world. We’re all about creating quiet, distraction-free spaces where you can focus on some serious heads-down work without the usual interruptions. The company was founded on the idea that sometimes it helps to ditch the office.</p>
+            </div>
+           
+        </div>
+      </div>
 
     </div>
 
@@ -70,5 +107,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
