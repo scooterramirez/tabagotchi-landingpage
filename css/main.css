@@ -198,6 +198,14 @@ body {
 
 }
 
+.wrapp img{
+	margin: 0 auto;
+	margin-top: 30px;
+	display: block;
+	text-align: center;
+	width: 200px;
+}
+
 
 .quest {
     padding: 1em 0em;
