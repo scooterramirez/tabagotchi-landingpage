@@ -1,4 +1,15 @@
+a {
+	cursor: pointer;
+	cursor: hand;
+}
 
+@keyframes blink {
+	0% {opacity: .25}
+	49%{opacity: .25}
+	50% {opacity: 1}
+}
+
+blink{animation: blink .75s infinite;}
 
 @font-face {
   font-family: 'vcr osd mono';
@@ -198,13 +209,13 @@ body {
 
 }
 
-.wrapp img{
+/*.wrapp img{
 	margin: 0 auto;
 	margin-top: 30px;
 	display: block;
 	text-align: center;
 	width: 200px;
-}
+}*/
 
 
 .quest {
@@ -259,7 +270,7 @@ body {
 	}
 
 	.breather img {
-		width: 20%;
+		width: 30%;
 	}
 
 	.logo {
@@ -276,7 +287,7 @@ body {
 	}
 
 	.directions {
-		width: 45%;
+		width: 48%;
 		margin: 0 auto;
 	}
 
@@ -298,6 +309,7 @@ body {
 		left: 20px;
 		padding: 0px;
 		margin: 0px;
+		opacity: .5;
 	}
 
 	.evolve img {
@@ -311,6 +323,7 @@ body {
 		right: 20px;
 		padding: 0px;
 		margin: 0px;
+		opacity: .5;
 	}
 
 	.faq img {
@@ -354,5 +367,10 @@ body {
 	.answer {
 		font-size: 12px;
 	}
+
+	.wrapp {
+    z-index: 1000000000;
+
+}
 
 }
